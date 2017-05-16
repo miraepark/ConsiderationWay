@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/RouteMap"
-            android:src="@drawable/subway_route"
-            android:scaleType="centerCrop"/>
+            android:src="@drawable/image_line8"
+            android:scaleType="fitXY"/>
     </LinearLayout>
 </RelativeLayout>
