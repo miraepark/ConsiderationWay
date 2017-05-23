@@ -50,12 +50,27 @@ public class Call extends AppCompatActivity {
     //리스트뷰나타내기
     private void dataSetting(){
 
-        for(int i=0;i<9;i++) {
-            mMyAdapter.addItem(
-                    ContextCompat.getDrawable(getApplicationContext(), R.drawable.icon)
-                    , "name_"+i
-                    , "test"+i);
-        }
+
+        mMyAdapter.addItem(
+                ContextCompat.getDrawable(getApplicationContext(), R.drawable.icon)
+                ," 광운대"
+                , "02-917-7445");
+        mMyAdapter.addItem(
+                ContextCompat.getDrawable(getApplicationContext(), R.drawable.icon)
+                ," 구로 "
+                , "02-869-0089");
+        mMyAdapter.addItem(
+                ContextCompat.getDrawable(getApplicationContext(), R.drawable.icon)
+                ," 병점"
+                , "031-234-7788");
+        mMyAdapter.addItem(
+                ContextCompat.getDrawable(getApplicationContext(), R.drawable.icon)
+                , " 시청"
+                , "02-6110-1122");
+        mMyAdapter.addItem(
+                ContextCompat.getDrawable(getApplicationContext(), R.drawable.icon)
+                , " 왕십리"
+                , "02-6311-6765");
 
         mListView.setAdapter(mMyAdapter);
 
