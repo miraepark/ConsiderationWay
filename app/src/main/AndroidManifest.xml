@@ -21,7 +21,8 @@
             android:name=".MainActivity"
             android:theme="@style/NoTitle" />
         <activity android:name=".call" />
-        <activity android:name=".Call"></activity>
+        <activity android:name=".Call" />
+        <activity android:name=".SearchListview"></activity>
     </application>
 
 </manifest>

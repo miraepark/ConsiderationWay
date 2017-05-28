@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
@@ -37,8 +38,19 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+        Button btn = (Button)findViewById(R.id.button); //Search 버튼 추가
+        btn.setOnClickListener( // 버튼 이벤트 처리 방법
+                new Button.OnClickListener(){
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this,SearchListview.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
