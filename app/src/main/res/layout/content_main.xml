@@ -26,36 +26,26 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/RouteMap"
-            android:src="@drawable/image_line8"
-            android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/RouteMap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_line8" />
 
             <Button
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_marginRight="134dp"
-                android:layout_marginEnd="134dp"
-                android:layout_marginTop="123dp"
-                android:id="@+id/button"
-                android:background="@drawable/round_btn"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-
-            <Button
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_marginLeft="104dp"
-                android:layout_marginStart="104dp"
-                android:layout_marginTop="82dp"
-                android:id="@+id/button2"
-                android:background="@drawable/round_btn"
-                android:layout_below="@+id/button"
+                android:id="@+id/garak_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="170dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginStart="115dp"
+                android:background="#00ff0000" />
+
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ImageView iv = (ImageView)findViewById(R.id.RouteMap);
+        ImageView iv = (ImageView) findViewById(R.id.RouteMap);
         attacher = new PhotoViewAttacher(iv);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -38,11 +38,12 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        Button btn = (Button)findViewById(R.id.button); //Search 버튼 추가
+        //Search 버튼 추가
+        Button btn = (Button) findViewById(R.id.button);
         btn.setOnClickListener( // 버튼 이벤트 처리 방법
-                new Button.OnClickListener(){
+                new Button.OnClickListener() {
                     public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this,SearchListview.class);
+                        Intent intent = new Intent(MainActivity.this, SearchListview.class);
                         startActivity(intent);
                     }
                 }
@@ -51,6 +52,15 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        Button timetalbe_btn = (Button) findViewById(R.id.garak_btn);
+        timetalbe_btn.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
+                        startActivity(intent);
+                    }
+                }
+        );
     }
 
     @Override
@@ -82,6 +92,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, Call.class);
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
+
 
         } else if (id == R.id.nav_slideshow) {
 

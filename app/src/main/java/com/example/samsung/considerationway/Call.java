@@ -4,6 +4,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.io.IOException;
 
@@ -19,13 +20,6 @@ public class Call extends AppCompatActivity {
 
         // 위젯과 멤버변수 참조 획득
         mListView = (ListView)findViewById(R.id.listView);
-
-        // 파일읽기
-        try {
-            readTextFile("lostnfound.txt");
-        }catch (IOException e) {
-            e.printStackTrace();
-        }
 
         //리스트뷰나타내기
         dataSetting();
@@ -49,8 +43,6 @@ public class Call extends AppCompatActivity {
 
     //리스트뷰나타내기
     private void dataSetting(){
-
-
         mMyAdapter.addItem(
                 ContextCompat.getDrawable(getApplicationContext(), R.drawable.l1)
                 ," 광운대역"
