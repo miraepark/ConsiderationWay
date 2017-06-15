@@ -1,9 +1,12 @@
 package com.example.samsung.considerationway;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -41,6 +44,20 @@ public class SearchListview extends AppCompatActivity implements TextWatcher {
         listView.setAdapter(arrayAdapter);
         listView.setTextFilterEnabled(true);
         editText.addTextChangedListener(this);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==0) {
+                    Intent intent = new Intent(SearchListview.this, TimetableActivity.class);
+                    startActivity(intent);
+                }else if(position==1){
+                    Intent intent = new Intent(SearchListview.this, MainActivity.class);
+                    startActivity(intent);
+
+                }
+            }
+        });
     }
 
     @Override

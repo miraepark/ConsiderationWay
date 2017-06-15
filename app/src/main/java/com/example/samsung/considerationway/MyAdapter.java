@@ -66,18 +66,6 @@ public class MyAdapter extends BaseAdapter {
 
         //(위젯에 대한 이벤트리스너를 지정하고 싶다면 여기에 작성하면된다..)
 
-        iv_img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, pos + "번째 이미지 선택", Toast.LENGTH_SHORT).show();
-            }
-        });
-        tv_name.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "선택: " + tv_name.getText().toString(), Toast.LENGTH_SHORT).show();
-            }
-        });
         tv_contents.setOnClickListener(new View.OnClickListener() {
             @Override
             //전화연결
