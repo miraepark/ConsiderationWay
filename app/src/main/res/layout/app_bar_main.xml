@@ -12,15 +12,30 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:background="#FF33A6"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEARCH"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:background="#00ff0000"
+                android:id="@+id/search_btn"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.Toolbar>>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_main"
+        android:id="@+id/include" />
+
 
 </android.support.design.widget.CoordinatorLayout>

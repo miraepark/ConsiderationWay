@@ -37,13 +37,15 @@ public class SearchListview extends AppCompatActivity implements TextWatcher {
         arrayAdapter.add("송파");
         arrayAdapter.add("수진");
         arrayAdapter.add("신흥");
-        arrayAdapter.add("왕사");
+        arrayAdapter.add("암사");
         arrayAdapter.add("잠실");
         arrayAdapter.add("장지");
         arrayAdapter.add("천호");
         listView.setAdapter(arrayAdapter);
         listView.setTextFilterEnabled(true);
         editText.addTextChangedListener(this);
+
+        //눌럿을떄 intent
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
@@ -52,7 +54,7 @@ public class SearchListview extends AppCompatActivity implements TextWatcher {
                     Intent intent = new Intent(SearchListview.this, TimetableActivity.class);
                     startActivity(intent);
                 }else if(position==1){
-                    Intent intent = new Intent(SearchListview.this, MainActivity.class);
+                    Intent intent = new Intent(SearchListview.this, ArrivingInfoActivity.class);
                     startActivity(intent);
 
                 }

@@ -9,43 +9,29 @@
     tools:context="com.example.samsung.considerationway.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <LinearLayout
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/RouteMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_line8" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="385dp"
-            android:layout_height="48dp"
-            android:text="Search" />
+            android:id="@+id/garak_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="170dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginStart="115dp"
+            android:background="#00ff0000" />
+    </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/RouteMap"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="fitXY"
-                android:src="@drawable/image_line8" />
-
-            <Button
-                android:id="@+id/garak_btn"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="170dp"
-                android:layout_marginLeft="115dp"
-                android:layout_marginStart="115dp"
-                android:background="#00ff0000" />
-
-        </RelativeLayout>
-    </LinearLayout>
 </RelativeLayout>

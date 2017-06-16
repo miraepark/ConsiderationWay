@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         //Search 버튼 추가
-        Button btn = (Button) findViewById(R.id.button);
+        Button btn = (Button) findViewById(R.id.search_btn);
         btn.setOnClickListener( // 버튼 이벤트 처리 방법
                 new Button.OnClickListener() {
                     public void onClick(View v) {
@@ -87,10 +87,14 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.lostnfound) {
             Intent intent = new Intent(MainActivity.this, Call.class);
             startActivity(intent);
+        }
+        //임시
+        else if(id == R.id.help_disable){
+            Intent intent2=new Intent(MainActivity.this, HelpdisabledActivity.class);
+            startActivity(intent2);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

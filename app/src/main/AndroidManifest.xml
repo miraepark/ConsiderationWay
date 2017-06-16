@@ -5,22 +5,22 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:supportsRtl="true"
         android:label="지하철노선도"
+        android:supportsRtl="true"
         android:theme="@style/NoTitle">
-        <activity
-            android:name=".IntroActivity">
+        <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Call" />
         <activity android:name=".SearchListview" />
         <activity android:name=".TimetableActivity" />
+        <activity android:name=".HelpdisabledActivity" />
+        <activity android:name=".ArrivingInfoActivity"></activity>
     </application>
 
 </manifest>

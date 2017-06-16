@@ -14,15 +14,18 @@
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="0dp">
 
-        <TextView
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/garaktext_btn"
             android:text="[ 가락시장역 ]"
             android:textColor="#ffffff"
+            android:background="#00ff0000"
             android:textSize="25dp"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
 
         //상행선 표 시작
         <TableLayout

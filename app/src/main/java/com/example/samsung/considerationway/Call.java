@@ -26,21 +26,6 @@ public class Call extends AppCompatActivity {
 
     }
 
-    //파일읽기
-    public void readTextFile(String fileName) throws IOException {
-        try {
-            java.io.InputStream is = getAssets().open(fileName);
-            java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(is));
-            String oneLine = "";
-            while ((oneLine = br.readLine()) != null) {
-                //함수널예정
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
     //리스트뷰나타내기
     private void dataSetting(){
         mMyAdapter.addItem(

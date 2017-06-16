@@ -3,10 +3,14 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/lostnfound"
             android:icon="@drawable/lf"
             android:title="분실물센터" />
 
+        <item
+            android:id="@+id/help_disable"
+            android:icon="@drawable/lf"
+            android:title="보행약자를 위한 정보" />
     </group>
 
 </menu>
